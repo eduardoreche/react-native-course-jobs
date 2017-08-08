@@ -30,8 +30,13 @@ export default class App extends React.Component {
               settings: { screen: SettingsScreen },
             })
           },
-        }, { tabBarPosition: 'bottom' })
-      }
+        },
+        {
+          tabBarPosition: 'bottom',
+          swipeEnabled: false,
+          animationEnabled: false,
+        }
+      )},
     }, {
       navigationOptions: {
         tabBarVisible: false,
