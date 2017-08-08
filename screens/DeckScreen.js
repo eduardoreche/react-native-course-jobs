@@ -21,10 +21,9 @@ class DeckScreen extends Component {
           <MapView
             scrollEnabled={false}
             style={{ flex: 1 }}
-            cacheEnabled={Platform.OS === 'android' ? true : false}
+            cacheEnabled={Platform.OS === 'android'}
             initialRegion={initialRegion}
-          >
-          </MapView>
+          />
         </View>
         <View style={styles.detailWrapper}>
           <Text>{job.company}</Text>
