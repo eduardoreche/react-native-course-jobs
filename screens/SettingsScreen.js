@@ -7,6 +7,7 @@ import { clearLikedJobs } from '../actions';
 class SettingsScreen extends Component {
   static navigationOptions = {
     title: 'Settings',
+    tabBarVisible: false,
   }
 
   render() {

@@ -28,13 +28,18 @@ export default class App extends React.Component {
             screen: StackNavigator({
               review: { screen: ReviewScreen },
               settings: { screen: SettingsScreen },
-            })
-          },
+            },
+          )},
         },
         {
           tabBarPosition: 'bottom',
           swipeEnabled: false,
           animationEnabled: false,
+          tabBarOptions: {
+            labelStyle: { fontSize: 12 },
+            showIcon: true,
+            iconStyle: { width: 30, height: 30 },
+          }
         }
       )},
     }, {
